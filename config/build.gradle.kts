@@ -82,7 +82,7 @@ mavenPublishing {
         throw GradleException("libraryVersion must be specified in settings.gradle.kts")
     }
 
-    coordinates("io.github.rallista", "valhalla-models", libraryVersion)
+    coordinates("io.github.rallista", "valhalla-models-config", libraryVersion)
 
     // TODO: Convert to Dokka?
     configure(KotlinJvm(sourcesJar = true, javadocJar = JavadocJar.Javadoc()))
