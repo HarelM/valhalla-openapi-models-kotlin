@@ -80,14 +80,14 @@ mavenPublishing {
         throw GradleException("libraryVersion must be specified in settings.gradle.kts")
     }
 
-    coordinates("io.github.rallista", "valhalla-models-config", libraryVersion)
+    coordinates("io.github.rallista", "valhalla-models", libraryVersion)
 
     // TODO: Convert to Dokka?
     configure(KotlinJvm(sourcesJar = true, javadocJar = JavadocJar.Javadoc()))
 
     pom {
-        name.set("Valhalla Config Models")
-        description.set("Serializable objects to build Valhalla's config JSON.")
+        name.set("Valhalla API Models")
+        description.set("Serializable models used for interacting with Valhalla's JSON APIs.")
         url.set(ProjectConfig.PROJECT_URL)
 
         licenses {
