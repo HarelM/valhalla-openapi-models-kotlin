@@ -43,7 +43,7 @@ val openApiOutputDir = layout.buildDirectory.dir("generated/openapi")
 openApiGenerate {
     generatorName.set("kotlin")
     inputSpec.set("$projectDir/openapi.yaml")
-    outputDir.set(openApiOutputDir.map { it.asFile.absolutePath })
+    outputDir.set(openApiOutputDir)
     packageName.set("com.valhalla.api")
     globalProperties.set(mapOf(
         "models" to ""
