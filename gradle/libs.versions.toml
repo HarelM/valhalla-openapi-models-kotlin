@@ -1,5 +1,5 @@
 [versions]
-openapi-generator = "7.12.0"
+openapi-generator = "7.24.0"
 moshi = "1.15.1"
 kotest = "5.9.0"
 maven-publish = "0.29.0"
